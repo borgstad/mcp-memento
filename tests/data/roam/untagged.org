@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       cc77dd88-0000-0000-0000-000000000000
+:END:
+#+title: Untagged Scratch
+
+This file has no :memento: filetag and must be invisible to the CLI.
+
+* A heading
+With a body that mentions latency just to prove search ignores it.

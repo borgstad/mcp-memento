@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       aa11bb22-0001-0002-0003-000000000001
+:END:
+#+title: Architecture
+#+filetags: :memento:
+
+High-level shape of the system we're standing up.
+
+* Components
+:PROPERTIES:
+:CREATED:  [2026-05-15]
+:END:
+The resolver, the parser, the splice writer.
+
+* Boundaries
+Stateless CLI, env-driven config, no path leakage to callers.
+
+*** Resolver internals
+File-UUID prefix lookup against the org-roam SQLite index.
+

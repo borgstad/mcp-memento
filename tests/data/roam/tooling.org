@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       aa11bb22-9999-9999-9999-999999999999
+:END:
+#+title: Tooling
+#+filetags: :memento:
+
+Notes on the dev loop and the smoke harness.
+
+* Editors
+Emacs is the canonical editor. Doom's layout differs from vanilla.
+
+* CI
+Tests run via the Makefile targets only. Smoke runs first; unit second.

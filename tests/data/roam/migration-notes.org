@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       73f8e2a0-1234-5678-90ab-cdef12345678
+:END:
+#+title: Migration Notes
+#+filetags: :memento:
+
+We're distilling the large image classifier into a smaller student model. This note tracks the why.
+
+* Goals
+Halve inference latency per image and keep top-1 accuracy within one point.
+
+** Constraints
+Latency budget is 200ms per batch. Must run on the existing GPU queue workers.
+
+* Risks
+Int8 quantization may cost more accuracy than distillation wins back.
+
+* Next steps
+Benchmark the student first; prune attention heads second. See [[id:AA11BB22-0001-0002-0003-000000000001][Architecture]] for the shape.
